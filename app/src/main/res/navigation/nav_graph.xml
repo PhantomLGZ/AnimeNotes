@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_fragment_home">
+
+    <fragment
+        android:id="@+id/nav_fragment_home"
+        android:name="name.phantom.animenotes.home.HomeFragment"
+        android:label="@string/fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_fragment_list"
+        android:name="name.phantom.animenotes.list.WorkListFragment"
+        android:label="@string/fragment_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_nav_list_to_nav_activity_work_detail"
+            app:destination="@id/nav_activity_anime_detail" >
+            <argument
+                android:name="workId"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+
+    <activity
+        android:id="@+id/nav_activity_anime_detail"
+        android:name="name.phantom.animenotes.list.WorkDetailActivity"
+        android:label="@string/activity_anime_detail">
+    </activity>
+
+
+    <fragment
+        android:id="@+id/nav_fragment_set"
+        android:name="name.phantom.animenotes.set.SetFragment"
+        android:label="@string/fragment_set"
+        tools:layout="@layout/fragment_set" />
+</navigation>

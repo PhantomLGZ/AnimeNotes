@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">动画笔记</string>
+
+    <string name="fragment_home">主页</string>
+    <string name="fragment_list">列表</string>
+    <string name="fragment_set">设置</string>
+    <string name="activity_anime_detail">动画详情</string>
+
+    <string name="form_work_title_label">中文标题</string>
+    <string name="form_work_title_hint">请输入标题</string>
+    <string name="form_work_summary_label">简介</string>
+    <string name="form_work_summary_hint">请输入简介</string>
+    <string name="form_work_button_text">提交</string>
+
+    <string name="list_anime_episode">%d话</string>
+
+    <string name="description_image">图片</string>
+
+    <string name="action_add">添加</string>
+    <string name="action_add_anime">添加动画</string>
+
+    <string name="label_original_run">首播时间</string>
+    <string name="content_original_run">%s ~ %s</string>
+    <string name="label_episodes">总话数</string>
+    <string name="label_watched_time">观看日期</string>
+
+    <string name="empty_list_msg">没有信息</string>
+</resources>
